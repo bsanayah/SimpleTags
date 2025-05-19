@@ -1,5 +1,4 @@
 # HTML and CSS Notes
-***
 This repository includes basic notes from HTML and CSS. After each lesson, I tried coding myself. Each files stores as follows:
 
 ### SimpleTags
