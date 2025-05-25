@@ -1,7 +1,7 @@
 # HTML and CSS Notes
 This repository includes basic notes from HTML and CSS. After each lesson, I tried coding myself. Each files stores as follows:
 
-### index.html
+### starter-tags.html
 This shows basic tags in HTML such as:
 - divs
 - paragraphs
@@ -10,5 +10,5 @@ This shows basic tags in HTML such as:
 - emphasis vs italic
 - comments
 
-### styles.css
+### starter-styles.css
 
