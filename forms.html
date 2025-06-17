@@ -1,0 +1,131 @@
+<html>
+    <body>
+        <h3>Forms</h3>
+        
+
+        <!--paragraph 1: form basics-->
+        <p>Forms  allow users to send data. It uses the "form" tags. It has an opening and closing
+            tag. <br>
+            An HTML form sends the input variables to an HTTP request, containing the data entered to a server.<br>
+            Different types of inputs are:
+            <ul>
+                <li>radio buttons</li>
+                <li>number</li>
+                <li>checkbox</li>
+                <li>textarea</li>
+                <li>text</li>
+                <li>password</li>
+                <li>email</li>
+            </ul>
+            A form can also have action attributes that points the form where to go.
+            When there is no path, it just sends the form right back here. <br>
+
+                ex.) form action = " / registration " method = "POST"> </ form> <br>
+                This will go to the regristration path.
+            <br><br><br>
+
+            Within that form tag, you can also see a method.
+            <ul>
+                <li>GET: retrieves information from the server</li>
+                <li>POST: sends information to the server</li>
+            </ul>
+        
+        
+
+
+        
+
+        </p>
+        <br><br><br><br><br><br>
+
+
+        <!--form 1: Input Type(s) text/password/submit-->
+        <h4>Sample form</h4>
+        <form action="" method="POST"> <!--no action, we aren't sending this anywhere right now, just for show-->
+            <label for="username">Enter your username</label>
+            <!--Quick thing about label. You can label an input type.
+            Label has a closing and ending tag.
+            Label has a "for" attribute. You tell the label what it is...for!
+            Give your label a name too. Let's you know what the field is for. -->
+            <input type="text" name="username"> <br> <!--input type is text, we named it username-->
+            <label for="password">Password</label>
+            <input type="password"> <br> <!--fun fact, the password input type masks whatever you put in-->
+            <input type="submit">
+        </form>
+        <br>
+
+        <!--form 2: Input Type(s) Check box-->
+        <form>
+            <!--Checkbox Notes:
+            - A checkbox lets the user select multiple independent options.
+            - It appears as a square.
+            - `type="checkbox"` defines the input as a checkbox.
+            - `value` is the specific option being selected (e.g., "subscribe", "accept").
+            - `name` identifies the data being submitted for each checkbox. The group. Checkboxes have their sepearate groups.
+            → Each checkbox usually has a different `name`, especially if they control different things.
+            - If you want multiple checkboxes to act like "select all that apply," give them **different `name`s** so they submit separately.
+            -->
+            <h4>Which color is a primary color (select all that apply)?</h4>
+            <input type="checkbox" value="Red" name="red"> 
+            <label for="red">Color Red</label> <br>
+            
+            <input type="checkbox" value="Yellow" name="yellow">
+            <label for="yellow">Color Yellow</label> <br>
+            
+            <input type="checkbox" value="Blue" name="blue">
+            <label for="blue">Color Blue</label><br>
+            
+        </form>
+
+        <!--form 3: Input Type(s) Radio button-->
+        <form>
+            <!-- Radio Button Notes:
+            - A radio button lets the user select only one option from a group.
+            - It appears as a circle.
+            - `type="radio"` defines the input as a radio button.
+            - `value` is the specific option being selected (e.g., "red", "blue").
+            - `name` groups radio buttons together — all radio buttons in the same group must share the same `name`.
+            → This is how the browser knows only one can be selected at a time.
+            - `name` is not shown to users — it's used behind the scenes in form submission.
+            -->
+            <h4>Helium is what state of matter?</h4>
+            
+            <input type="radio" value="solid" name="matter" >
+            <label for="solid">Solid Matter</label> <br>
+            
+            <input type="radio" value="liquid" name="matter">
+            <label for="liquid">Liquid Matter</label><br>
+            
+            <input type="radio" value="gas" name="matter">
+            <label for="gas">Gas Matter</label>
+            <!--since they all have the 'matter' name, only one can be selected at a time.-->
+        </form>
+       
+
+
+        <!--form 4: Input Type(s) numbers/email/file-->
+        <form>
+            <h4>Misc. Input forms</h4>
+            <label for="number">Enter your age</label>
+            <input type="number" name="age"><br>
+            
+            <label for="email">Enter your email</label>
+            <input type="email" name="email"> <br>
+            
+            <label for="file">Choose your file</label>
+            <input type="file" name="file"><br>
+        </form>
+
+        
+
+
+
+
+
+
+
+        <br> <br> <br>
+
+        <a href="index.html">back</a>
+    </body>
+</html>
